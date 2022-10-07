@@ -17,8 +17,8 @@ import {
   replaceAnchorLinksByLanguage,
 } from '../utils/i18n';
 
-const GITHUB_USERNAME = 'gaearon';
-const GITHUB_REPO_NAME = 'overreacted.io';
+const GITHUB_USERNAME = 'sulhadin';
+const GITHUB_REPO_NAME = 'sulhadin.com';
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif`;
@@ -69,21 +69,21 @@ class Translations extends React.Component {
             </span>
           )}
           {lang !== 'en' && (
-            <>
+            <React.Fragment>
               <br />
               <br />
               {lang !== 'ru' && (
-                <>
+                <React.Fragment>
                   <Link to={languageLink('en')}>Read the original</Link>
                   {' • '}
                   <a href={editUrl} target="_blank" rel="noopener noreferrer">
                     Improve this translation
                   </a>
                   {' • '}
-                </>
+                </React.Fragment>
               )}
               <Link to={`/${lang}`}>View all translated posts</Link>{' '}
-            </>
+            </React.Fragment>
           )}
         </Panel>
       </div>
@@ -137,7 +137,7 @@ class BlogPostTemplate extends React.Component {
       enSlug.length - 1
     )}/index${lang === 'en' ? '' : '.' + lang}.md`;
     const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
-      `https://overreacted.io${enSlug}`
+      `https://sulhadin.com${enSlug}`
     )}`;
 
     return (
@@ -211,7 +211,7 @@ class BlogPostTemplate extends React.Component {
               }}
               to={'/'}
             >
-              Overreacted
+              Underreacted
             </Link>
           </h3>
           <Bio />

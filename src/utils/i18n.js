@@ -9,7 +9,6 @@ import whitelist from './whitelist';
 // https://www.w3.org/International/articles/language-tags/
 // https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 // https://discuss.httparchive.org/t/what-are-the-invalid-uses-of-the-lang-attribute/1022
-
 export const codeToLanguage = code =>
   supportedLanguages[code].replace(/ /g, ' ' /* nbsp */);
 

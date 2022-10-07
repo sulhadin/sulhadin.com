@@ -8,9 +8,12 @@ import sun from '../assets/sun.png';
 import moon from '../assets/moon.png';
 
 class Layout extends React.Component {
-  state = {
+constructor(props) {
+  super(props);
+  this.state = {
     theme: null,
   };
+}
   componentDidMount() {
     this.setState({ theme: window.__theme });
     window.__onThemeChange = () => {
@@ -57,7 +60,7 @@ class Layout extends React.Component {
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: 'rgb(255, 167, 196)',
+              color: 'var(--pink)',
             }}
             to={'/'}
           >
@@ -83,7 +86,7 @@ class Layout extends React.Component {
           meta={[
             {
               name: 'theme-color',
-              content: this.state.theme === 'light' ? '#ffa8c5' : '#282c35',
+              content: this.state.theme === 'light' ? 'var(--pink)' : '#282c35',
             },
           ]}
         />
