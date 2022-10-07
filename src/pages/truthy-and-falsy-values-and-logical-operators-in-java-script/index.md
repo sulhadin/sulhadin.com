@@ -1,7 +1,7 @@
 ---
 title: Truthy and Falsy values and logical operators in JavaScript
 date: '2020-01-06'
-spoiler: Everything either truthy or falsy
+spoiler: Everything either is truthy or falsy
 cta: 'javascript'
 ---
 
