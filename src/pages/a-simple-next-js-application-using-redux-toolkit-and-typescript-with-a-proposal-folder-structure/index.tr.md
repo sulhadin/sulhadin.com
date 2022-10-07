@@ -1,7 +1,7 @@
 ---
 title: Öneri bir klasör yapısına sahip redux-toolkit ve typescript kullanan basit bir Next.js uygulaması
-date: '2020-03-09'
-spoiler: useState'in gerçekten nasıl çalıştığını da göreceğiz.
+date: '2020-12-09'
+spoiler: Yeni bir projeye nasıl başlayacağımızı görelim!
 cta: 'react'
 ---
 

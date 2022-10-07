@@ -1,7 +1,7 @@
 ---
 title: A simple Next.js application using redux-toolkit and typescript with a proposal folder structure
-date: '2020-03-09'
-spoiler: We'll see also how useState really works.
+date: '2020-12-09'
+spoiler: Let's see how to begin a new project!
 cta: 'react'
 ---
 
