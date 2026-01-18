@@ -7,10 +7,10 @@
     --title: #222;
     --bg: white;
     --code-bg: #232936;
-    --link: #d23669;
+    --link: #368ed2;
     --inlineCode-bg: rgba(255, 229, 100, 0.2);
     --inlineCode-text: #1a1a1a;
-    --pink: lab(63 59.32 -1.47);
+    --pink: lab(75.14% -13.26 -32.99);
     --purple: lab(33 42.09 -43.19);
     --svg-filter: none;
 }
@@ -20,10 +20,10 @@
         --title: white;
         --bg: rgb(40, 44, 53);
         --code-bg: #191d27;
-        --link: #ffa7c4;
+        --link: #368ed2;
         --inlineCode-bg: rgba(115, 124, 153, 0.2);
         --inlineCode-text: #e6e6e6;
-        --pink: lab(81 32.36 -7.02);
+        --pink: lab(75.14% -13.26 -32.99);
         --purple: lab(78 19.97 -36.75);
         --svg-filter: invert(93%) hue-rotate(180deg);
     }
