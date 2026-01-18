@@ -1,5 +1,5 @@
 ---
-title: A simple Next.js application using redux-toolkit and typescript with a proposal folder structure
+title: Structuring a Next.js App with Redux Toolkit
 date: '2020-12-09'
 spoiler: Let's see how to begin a new project!
 cta: 'react'

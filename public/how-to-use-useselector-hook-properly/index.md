@@ -1,11 +1,11 @@
 ---
-title: A simple Next.js app using Redux-toolkit, How to use 'useSelector' hook properly.
+title: How to Use useSelector Hook Properly.
 date: '2021-12-20'
 spoiler: How to spot and resolve your extra renders with profiler?
 cta: 'react'
 ---
 
-Earlier in [this](../a-simple-next-js-application-using-redux-toolkit-and-typescript-with-a-proposal-folder-structure) article, we set up a simple application using Next.js, react-toolkit and typescript as well as an example and usable folder structure. Since the post went long as crazy, I decided to divide the post into two parts.
+Earlier in [this](../structuring-a-next-js-app-with-redux-toolkit) article, we set up a simple application using Next.js, react-toolkit and typescript as well as an example and usable folder structure. Since the post went long as crazy, I decided to divide the post into two parts.
 
 The first part as just mentioned above was set up a small project.
 
