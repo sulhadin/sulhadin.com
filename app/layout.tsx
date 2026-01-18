@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <HomeLink />
             <span className="relative top-[4px] italic">
               by{" "}
-              <Link href="https://sulhadin.com" target="_blank">
+              <Link href="https://github.com/sulhadin" target="_blank">
                 <img
                   alt="Sulhadin Öney"
                   src="/avi.jpg"
