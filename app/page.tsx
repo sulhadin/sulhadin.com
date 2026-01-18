@@ -27,12 +27,8 @@ export default async function Home() {
 }
 
 function PostTitle({ post }: { post: Post }) {
-  const lightStart = new Color('lab(63 59.32 -1.47)')
-  const lightEnd = new Color('lab(33 42.09 -43.19)')
-  const lightRange = lightStart.range(lightEnd)
-  const darkStart = new Color('lab(78.9 0.88 -24)')
-  const darkEnd = new Color('lab(78 19.97 -36.75)')
-  const darkRange = darkStart.range(darkEnd)
+  const lightRange = Color.range('lab(63 59.32 -1.47)', 'lab(33 42.09 -43.19)')
+  const darkRange = Color.range('lab(78.9 0.88 -24)', 'lab(78 19.97 -36.75)')
   const today = new Date()
   const timeSinceFirstPost = today.getTime() - new Date(2018, 10, 30).getTime()
   const timeSinceThisPost = today.getTime() - new Date(post.date).getTime()
