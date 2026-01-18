@@ -62,11 +62,11 @@ export function Blockquote(props: React.ComponentProps<'blockquote'>) {
 }
 
 export function UL(props: React.ComponentProps<'ul'>) {
-  return <ul className="list-inside md:list-outside list-disc" {...props} />
+  return <ul className="list-inside md:list-outside list-disc [&_ul]:ml-6 [&_ol]:ml-6" {...props} />
 }
 
 export function OL(props: React.ComponentProps<'ol'>) {
-  return <ol className="list-inside md:list-outside list-decimal" {...props} />
+  return <ol className="list-inside md:list-outside list-decimal [&_ul]:ml-6 [&_ol]:ml-6" {...props} />
 }
 
 export function LI(props: React.ComponentProps<'li'>) {
