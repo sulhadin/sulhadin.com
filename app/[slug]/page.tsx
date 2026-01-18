@@ -33,7 +33,7 @@ export default async function PostPage({
   }
   let Wrapper = postComponents.Wrapper ?? Fragment;
   const { content, data } = matter(file);
-  const editUrl = `https://tangled.org/@danabra.mov/overreacted/blob/main/public/${encodeURIComponent(
+  const editUrl = `https://tangled.org/@sulhadin/refactored/blob/main/public/${encodeURIComponent(
     slug,
   )}/index.md?code=true`;
   return (
@@ -59,7 +59,7 @@ export default async function PostPage({
             <div className="relative md:-left-6 flex flex-wrap items-baseline gap-4">
               {!data.nocta && (
                 <a
-                  href="https://ko-fi.com/gaearon"
+                  href="https://ko-fi.com/sulhadin"
                   target="_blank"
                   className="tip tip-sm"
                 >
@@ -132,7 +132,7 @@ export default async function PostPage({
 
                   let finalSrc = src;
                   if (src && !/^https?:\/\//.test(src)) {
-                    // https://github.com/gaearon/overreacted.io/issues/827
+                    // https://github.com/gaearon/refactored.io/issues/827
                     finalSrc = `/${slug}/${src}`;
                   }
 
@@ -141,7 +141,7 @@ export default async function PostPage({
                 Video: ({ src, ...rest }) => {
                   let finalSrc = src;
                   if (src && !/^https?:\/\//.test(src)) {
-                    // https://github.com/gaearon/overreacted.io/issues/827
+                    // https://github.com/gaearon/refactored.io/issues/827
                     finalSrc = `/${slug}/${src}`;
                   }
                   return <video src={finalSrc} {...rest} />;
@@ -174,7 +174,7 @@ export default async function PostPage({
           {!data.nocta && (
             <div className="flex flex-wrap items-baseline gap-4 relative md:-left-8">
               <a
-                href="https://ko-fi.com/gaearon"
+                href="https://ko-fi.com/sulhadin"
                 target="_blank"
                 className="tip"
               >
@@ -224,7 +224,7 @@ export async function generateMetadata({
   const file = await readFile("./public/" + slug + "/index.md", "utf8");
   let { data } = matter(file);
   return {
-    title: data.title + " — overreacted",
+    title: data.title + " — refactored",
     description: data.spoiler,
   };
 }

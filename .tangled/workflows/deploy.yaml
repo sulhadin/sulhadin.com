@@ -14,4 +14,4 @@ steps:
       npm run build
   - name: deploy
     command: |
-      npx --yes wrangler pages deploy --branch main --project-name overreacted ./out/
+      npx --yes wrangler pages deploy --branch main --project-name refactored ./out/

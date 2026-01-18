@@ -23,7 +23,7 @@ npm run postinstall
 
 ## Architecture Overview
 
-**Static Blog with Next.js App Router**: This is Dan Abramov's personal blog built as a static site using Next.js 15 with the App Router and React 19. The site exports to static files (`output: "export"`).
+**Static Blog with Next.js App Router**: This is Sulhadin Öney's personal blog built as a static site using Next.js 15 with the App Router and React 19. The site exports to static files (`output: "export"`).
 
 **Blog Post Structure**: Posts are stored as markdown files in `/public/[slug]/index.md` with frontmatter containing metadata (title, date, spoiler, youtube). Each post directory can contain:
 - `index.md` - The main post content

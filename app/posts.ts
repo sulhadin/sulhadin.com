@@ -12,15 +12,15 @@ export interface Post {
 }
 
 export const metadata = {
-  title: "overreacted — A blog by Dan Abramov",
-  description: "A blog by Dan Abramov",
+  title: "refactored — A blog by Sulhadin Öney",
+  description: "A blog by Sulhadin Öney",
   openGraph: {
-    title: "overreacted",
+    title: "refactored",
   },
   alternates: {
     types: {
-      "application/atom+xml": "https://overreacted.io/atom.xml",
-      "application/rss+xml": "https://overreacted.io/rss.xml",
+      "application/atom+xml": "https://sulhadin.com/atom.xml",
+      "application/rss+xml": "https://sulhadin.com/rss.xml",
     },
   },
 };
@@ -46,12 +46,12 @@ export async function getPosts(): Promise<Post[]> {
 
 export async function generateFeed() {
   const posts = await getPosts();
-  const site_url = "https://overreacted.io/";
+  const site_url = "https://sulhadin.com/";
 
   const feedOptions = {
     author: {
-      name: "Dan Abramov",
-      email: "dan.abramov@gmail.com",
+      name: "Sulhadin Öney",
+      email: "sulhadin@gmail.com",
       link: site_url,
     },
     description: metadata.description,
@@ -59,7 +59,7 @@ export async function generateFeed() {
     feedLinks: { atom: `${site_url}atom.xml`, rss: `${site_url}rss.xml` },
     generator: "Feed for Node.js",
     id: site_url,
-    image: "https://github.com/gaearon.png",
+    image: "https://github.com/sulhadin.png",
     link: site_url,
     title: metadata.title,
   };

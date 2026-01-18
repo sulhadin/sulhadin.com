@@ -40,7 +40,7 @@ export async function generateHomeImage() {
             color: "transparent",
           }}
         >
-          overreacted
+          refactored
         </span>
         <span
           style={{
@@ -52,8 +52,8 @@ export async function generateHomeImage() {
         >
           by
           <img
-            alt="Dan Abramov"
-            src="https://github.com/gaearon.png"
+            alt="Sulhadin Öney"
+            src="https://github.com/sulhadin.png"
             style={{
               height: 120,
               width: 120,
@@ -99,7 +99,7 @@ export async function generatePostImage({ title }) {
             fontSize: 60,
           }}
         >
-          overreacted
+          refactored
         </span>
         <span
           style={{
@@ -111,8 +111,8 @@ export async function generatePostImage({ title }) {
         >
           by
           <img
-            alt="Dan Abramov"
-            src="https://github.com/gaearon.png"
+            alt="Sulhadin Öney"
+            src="https://github.com/sulhadin.png"
             style={{
               height: 80,
               width: 80,
