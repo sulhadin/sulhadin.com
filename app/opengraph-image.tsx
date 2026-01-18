@@ -1,9 +1,9 @@
-import { size, contentType, generateHomeImage } from "../og/generateImage";
+import { contentType, generateHomeImage, size } from '../og/generateImage'
 
-export const dynamic = "force-static";
-export const alt = "refactored";
-export { size, contentType };
+export const dynamic = 'force-static'
+export const alt = 'refactored'
+export { size, contentType }
 
 export default async function Image() {
-  return generateHomeImage();
+  return generateHomeImage()
 }

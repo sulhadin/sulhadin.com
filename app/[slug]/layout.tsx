@@ -1,4 +1,4 @@
-import HomeLink from "../HomeLink";
+import HomeLink from '../HomeLink'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -8,5 +8,5 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <HomeLink />
       </footer>
     </>
-  );
+  )
 }

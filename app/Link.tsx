@@ -1,21 +1,21 @@
-"use client";
+'use client'
 
-import { useTransition } from "react";
-import NextLink from "next/link";
-import { useRouter } from "next/navigation";
-import { MouseEvent } from "react";
+import NextLink from 'next/link'
+import { useRouter } from 'next/navigation'
+import { useTransition } from 'react'
+import type { MouseEvent } from 'react'
 
 function isModifiedEvent(event: MouseEvent<HTMLAnchorElement>) {
-  const eventTarget = event.currentTarget;
-  const target = eventTarget.getAttribute("target");
+  const eventTarget = event.currentTarget
+  const target = eventTarget.getAttribute('target')
   return (
-    (target && target !== "_self") ||
+    (target && target !== '_self') ||
     event.metaKey ||
     event.ctrlKey ||
     event.shiftKey ||
     event.altKey ||
     (event.nativeEvent && event.nativeEvent.which === 2)
-  );
+  )
 }
 
 export default function Link({
@@ -26,17 +26,17 @@ export default function Link({
   target,
   ...rest
 }: {
-  className?: string;
-  children?: React.ReactNode;
-  style?: React.CSSProperties;
-  href: string;
-  target?: string;
+  className?: string
+  children?: React.ReactNode
+  style?: React.CSSProperties
+  href: string
+  target?: string
 } & React.ComponentProps<typeof NextLink>) {
-  const router = useRouter();
-  const [isNavigating, trackNavigation] = useTransition();
-  const isExternal = /^https?:\/\//.test(href);
+  const router = useRouter()
+  const [isNavigating, trackNavigation] = useTransition()
+  const isExternal = /^https?:\/\//.test(href)
   if (!target && isExternal) {
-    target = "_blank";
+    target = '_blank'
   }
   return (
     <NextLink
@@ -45,21 +45,21 @@ export default function Link({
       href={href}
       onClick={(e) => {
         if (!isModifiedEvent(e)) {
-          e.preventDefault();
+          e.preventDefault()
           trackNavigation(() => {
-            router.push(e.currentTarget.href);
-          });
+            router.push(e.currentTarget.href)
+          })
         }
       }}
-      className={[className, "scale-100 active:scale-100"].join(" ")}
+      className={[className, 'scale-100 active:scale-100'].join(' ')}
       style={{
         ...style,
-        transform: isNavigating ? "scale(1)" : "",
+        transform: isNavigating ? 'scale(1)' : '',
         opacity: isNavigating ? 0.85 : 1,
-        transition: "transform 0.2s ease-in-out, opacity 0.2s 0.4s linear",
+        transition: 'transform 0.2s ease-in-out, opacity 0.2s 0.4s linear',
       }}
     >
       {children}
     </NextLink>
-  );
+  )
 }

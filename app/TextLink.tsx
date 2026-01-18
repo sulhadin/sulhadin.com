@@ -1,4 +1,4 @@
-import Link from "./Link";
+import Link from './Link'
 
 export default function TextLink({
   className,
@@ -8,9 +8,9 @@ export default function TextLink({
     <Link
       {...props}
       className={[
-        "underline decoration-[--link] decoration-1 underline-offset-4 text-[--link]",
+        'underline decoration-[--link] decoration-1 underline-offset-4 text-[--link]',
         className,
-      ].join(" ")}
+      ].join(' ')}
     />
-  );
+  )
 }
