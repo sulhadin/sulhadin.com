@@ -33,9 +33,6 @@ export default async function PostPage({
   }
   const Wrapper = postComponents.Wrapper ?? Fragment
   const { content, data } = matter(file)
-  const editUrl = `https://tangled.org/@sulhadin/refactored/blob/main/public/${encodeURIComponent(
-    slug,
-  )}/index.md?code=true`
   return (
     <>
       <article>
@@ -133,7 +130,6 @@ export default async function PostPage({
 
                     let finalSrc = src
                     if (src && !/^https?:\/\//.test(src)) {
-                      // https://github.com/gaearon/refactored.io/issues/827
                       finalSrc = `/${slug}/${src}`
                     }
 
@@ -142,7 +138,6 @@ export default async function PostPage({
                   Video: ({ src, ...rest }) => {
                     let finalSrc = src
                     if (src && !/^https?:\/\//.test(src)) {
-                      // https://github.com/gaearon/refactored.io/issues/827
                       finalSrc = `/${slug}/${src}`
                     }
                     return <video src={finalSrc} {...rest} />
@@ -183,7 +178,10 @@ export default async function PostPage({
                 <span className="tip-bg" />
                 Pay what you like
               </a>
-              <TextLink href="/hire-me-in-japan/">Hire me</TextLink>
+              &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+              <TextLink href="https://www.linkedin.com/in/sulhadin/">My Linkedin</TextLink>
+              &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+              <TextLink href={"https://github.com/sulhadin"}>My GitHub</TextLink>
             </div>
           )}
           <hr className="opacity-60 dark:opacity-10" />
@@ -200,8 +198,6 @@ export default async function PostPage({
                 &nbsp;&nbsp;&middot;&nbsp;&nbsp;
               </>
             )}
-            {/* TODO: This should say Edit when Tangled adds an editor. */}
-            <TextLink href={editUrl}>Fork on Tangled</TextLink>
           </p>
         </div>
       </article>

@@ -228,3 +228,7 @@ Here's a diagram:
 ![Final algorithm diagram](./image-18.webp)
 
 The shortest path is constructed by starting point to target point step by step by checking the F variables that are closest to the ultimate point.
+
+## See It In Action
+
+Want to see the A* algorithm in a real game? Check out my [Tank 1990](https://github.com/sulhadin/tank-1990) project on GitHub - a classic tank game where enemy tanks use A* pathfinding to hunt you down!
