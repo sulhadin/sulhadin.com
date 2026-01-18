@@ -30,7 +30,7 @@ function PostTitle({ post }: { post: Post }) {
   let lightStart = new Color("lab(63 59.32 -1.47)");
   let lightEnd = new Color("lab(33 42.09 -43.19)");
   let lightRange = lightStart.range(lightEnd);
-  let darkStart = new Color("lab(81 32.36 -7.02)");
+  let darkStart = new Color("lab(78.9 0.88 -24)");
   let darkEnd = new Color("lab(78 19.97 -36.75)");
   let darkRange = darkStart.range(darkEnd);
   let today = new Date();
