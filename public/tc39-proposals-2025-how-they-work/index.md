@@ -1,11 +1,11 @@
 ---
 title: JavaScript's New Features in 2025 - How They Actually Work
 date: '2025-12-27'
-spoiler: TC39 finalized 9 proposals this year - here's what they do and how they work under the hood
+spoiler: TC39 finalized 10 proposals this year, lets wrapping up the most popular ones - here's what they do and how they work under the hood
 cta: 'ecmascript'
 ---
 
-TC39 finished nine proposals in 2025. Most articles will tell you *what* they do. This one tells you *how* they work.
+TC39 finished ten proposals in 2025,lets wrapping up the most popular ones. Most articles will tell you *what* they do. This one tells you *how* they work.
 
 I'm going to focus on the four that will change how I write JavaScript: `Array.fromAsync()`, explicit resource management with `using`, `RegExp.escape()`, and `Error.isError()`.
 
